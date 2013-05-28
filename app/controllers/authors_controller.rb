@@ -1,5 +1,4 @@
 class AuthorsController < ApplicationController
-  before_filter :authenticate_user!, :except => [:index, :show] # linha adicionada
   # GET /authors
   # GET /authors.json
   def index
