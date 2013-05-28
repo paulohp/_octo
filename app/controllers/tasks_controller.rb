@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  before_filter :autenticacao, :except => [:index, :show] # linha adicionada
+  before_filter :authenticate_user!, :except => [:index, :show] # linha adicionada
   # GET /tasks
   # GET /tasks.json
   def index
