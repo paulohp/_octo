@@ -4,9 +4,6 @@ Tasklist::Application.routes.draw do
   resources :tasks
 
   resources :categories
-
-  resources :authors
-
   resources :users
   root :to => 'tasks#index'
 
