@@ -25,7 +25,6 @@ class TasksController < ApplicationController
   # GET /tasks/new.json
   def new
     @task = Task.new
-    @authors = Author.all
     @categories = Category.all
     respond_to do |format|
       format.html # new.html.erb
@@ -35,7 +34,6 @@ class TasksController < ApplicationController
 
   # GET /tasks/1/edit
   def edit
-    @authors = Author.all
     @categories = Category.all
     @task = Task.find(params[:id])
   end
@@ -43,7 +41,8 @@ class TasksController < ApplicationController
   # POST /tasks
   # POST /tasks.json
   def create
-    @task = Task.new(params[:task])
+    @task = current_user.tasks.build(params[:task])
+    @user = current_user
 
     respond_to do |format|
       if @task.save

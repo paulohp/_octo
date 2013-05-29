@@ -20,10 +20,6 @@
     <%= f.select :status, (["Pendente", "Em andamento", "Concluido"]) %>
   </div>
   <div class="field">
-    <%= f.label :author %><br />
-    <%= f.select :author_id, @authors.collect { |a| [a.name, a.id] } %>
-  </div>
-  <div class="field">
     <%= f.label :category %><br />
     <%= f.select :category_id, @categories.collect { |c| [c.name, c.id] } %>
   </div>

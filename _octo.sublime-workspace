@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"tas",
+				"tasks"
+			],
+			[
+				"auth",
+				"authors"
+			],
+			[
 				"tex",
 				"text"
 			],
@@ -506,19 +514,75 @@
 			[
 				"pad",
 				"padding"
-			],
-			[
-				"js",
-				"json"
-			],
-			[
-				"htm",
-				"html"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 3679,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/tasks/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 718,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/categories/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 510,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 154,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/schema.rb",
+			"settings":
+			{
+				"buffer_size": 2326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/migrate/20130529012544_remove_author_id_from_task.rb",
+			"settings":
+			{
+				"buffer_size": 157,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/tasks/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 785,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/tasks_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1958,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/JSHint/JSHint.sublime-build",
 	"command_palette":
@@ -568,6 +632,8 @@
 	},
 	"file_history":
 	[
+		"/projetos/rails/tasklist/app/views/authors/index.html.erb",
+		"/projetos/rails/tasklist/app/controllers/authors_controller.rb",
 		"/projetos/rails/musicstartme-app/app/helpers/application_helper.rb",
 		"/projetos/rails/musicstartme-app/app/views/projects/_form.html.erb",
 		"/projetos/rails/musicstartme-app/app/views/users/edit.html.erb",
@@ -693,9 +759,7 @@
 		"/projetos/rails/smartconvites/app/views/cart/_item.html.erb",
 		"/projetos/rails/smartconvites/app/views/cart/_cart.html.erb",
 		"/projetos/rails/smartconvites/app/models/cart.rb",
-		"/projetos/rails/smartconvites/app/models/cart_item.rb",
-		"/projetos/rails/smartconvites/db/migrate/20130227233512_create_cart_items.rb",
-		"/projetos/rails/smartconvites/app/views/admin/invitations/edit.html.erb"
+		"/projetos/rails/smartconvites/app/models/cart_item.rb"
 	],
 	"find":
 	{
@@ -957,8 +1021,217 @@
 	"groups":
 	[
 		{
+			"selected": 7,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 3679,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2783,
+								2783
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1380.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/tasks/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/categories/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 510,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "db/schema.rb",
+					"settings":
+					{
+						"buffer_size": 2326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 690.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "db/migrate/20130529012544_remove_author_id_from_task.rb",
+					"settings":
+					{
+						"buffer_size": 157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								104,
+								104
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/tasks/_form.html.erb",
+					"settings":
+					{
+						"buffer_size": 785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								578,
+								578
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 26.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/tasks_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1958,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								528,
+								528
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 759.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1011,6 +1284,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"tas",
+				"app/controllers/tasks_controller.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
 			[
 				"projects/",
 				"app/views/projects/_form.html.erb"
@@ -1186,10 +1467,6 @@
 			[
 				"invitations/sho",
 				"app/views/invitations/show.html.erb"
-			],
-			[
-				"route",
-				"config/routes.rb"
 			],
 			[
 				"or",
@@ -1518,10 +1795,6 @@
 			[
 				"regis",
 				"app/View/Users/register.ctp"
-			],
-			[
-				"fom",
-				"app/View/Elements/form_users.ctp"
 			]
 		],
 		"width": 0.0
@@ -1531,6 +1804,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"mus",
+				"/projetos/rails/musicstartme-app/musicstartme.sublime-project"
+			],
 			[
 				"sma",
 				"/projetos/rails/smartconvites/smartconvites.sublime-project"
