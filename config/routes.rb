@@ -7,6 +7,7 @@ Tasklist::Application.routes.draw do
 
   resources :authors
 
+  resources :users
   root :to => 'tasks#index'
 
 end
