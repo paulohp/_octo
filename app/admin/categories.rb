@@ -1,3 +1,3 @@
-ActiveAdmin.register Categories do
-  
+ActiveAdmin.register Category do
+
 end
