@@ -15,6 +15,6 @@ Tasklist::Application.routes.draw do
 
   resources :categories
   resources :users
-  root :to => 'tasks#index'
+  root :to => 'static#index'
 
 end
