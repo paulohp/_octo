@@ -47,9 +47,11 @@
           <a class="brand" href="#">_octo</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Tarefas", tasks_path %></li>
-              <li><%= link_to "Categorias", categories_path %></li>
-              <li><%= link_to "Autores", users_path %></li>
+              <% if user_signed_in? %>
+                <li><%= link_to "Tarefas", tasks_path %></li>
+                <li><%= link_to "Categorias", categories_path %></li>
+                <li><%= link_to "Autores", users_path %></li>
+              <% end %>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -58,21 +60,7 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Menu</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <% if user_signed_in? %>
-                <li><%= link_to("Sair", destroy_user_session_path, :method => :delete)  %></li>
-              <% else %>
-                <li><%= link_to('Login', new_user_session_path)  %> </li>
-              <% end %>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
+        <div class="span12">
           <%= bootstrap_flash %>
           <%= yield %>
         </div>
